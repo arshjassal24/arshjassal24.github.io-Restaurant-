@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title> Location </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="file://///SD36/ENVR/StudentHome/arsh.jassal/Desktop/index/stylesheet.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="stylesheet.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Oleo+Script' rel='stylesheet' type='text/css'>
+
+  </head>
+
+  <body class="location1">
+
+    <div>
+      <div class="sidebar">
+
+        <div class="w3-sidebar w3-bar-block w3-card-2 w3-animate-left" style="display:none" id="mySidebar">
+
+          <button class="w3-bar-item w3-button w3-large" onclick="w3_close()">Close &times;</button>
+
+          <a href="home.html" class="w3-bar-item w3-button w3-border-bottom"><i class="fa fa-home fa-2x"></i>
+                        <span class="nav-text">
+                            Home
+                        </span>
+                    </a>
+
+          <a href="menu.html" class="w3-bar-item w3-button w3-border-bottom"><i class="fa fa-bars fa-2x"></i>
+                        <span class="nav-text">
+                            Menu
+                        </span>
+                    </a>
+
+          <a href="location.html" class="w3-bar-item w3-button w3-border-bottom"><i class="fa fa-map-marker fa-2x"></i>                        
+                        <span class="nav-text">               Location                        </span>                    
+                    </a>
+
+          <a href="#" class="w3-bar-item w3-button w3-border-bottom"><i class="fa fa-phone fa-2x"></i>
+                        <span class="nav-text">
+                           Contact Us
+                        </span>
+                    </a>
+
+          <a href="#" class="w3-bar-item w3-button w3-border-bottom"><i class="fa fa-user-circle fa-2x"></i>
+                        <span class="nav-text">
+                           Log In
+                        </span>
+                    </a>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+      <div zclass="w3-main" id="main">
+
+        <div class="w3-teal">
+          <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
+          <div class="w3-container">
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <script>
+      function w3_open() {
+        document.getElementById("main").style.marginLeft = "25%";
+        document.getElementById("mySidebar").style.width = "25%";
+        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("openNav").style.display = 'none';
+      }
+      function w3_close() {
+        document.getElementById("main").style.marginLeft = "0%";
+        document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("openNav").style.display = "inline-block";
+      }
+    </script>
+
+    </div>
+    </div>
+    <h1 class="pagetitle"> <em> Location </em></h1>
+    <div>
+
+      <div id="map" style="width:1500px;height:800px;background:yellow;margin:auto;"></div>
+
+      <script>
+        function myMap() {
+          var mapOptions = {
+            center: new google.maps.LatLng(49.1044, -122.8011),
+            zoom: 10,
+            mapTypeId: google.maps.MapTypeId.HYBRID
+          }
+          var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+        }
+        var marker = new google.maps.Marker({
+          position: myLatLng,
+          map: map,
+          title: 'Hello World!'
+        });
+      </script>
+
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGjuVLW1LnZcyyhI005oO5SgeO1ZZVdlU&callback=myMap"></script>
+
+    </div>
+
+
+    <div class="centering">
+
+      <div class="search">
+        <form class="search-input clearfix">
+          <div class="manual clearfix">
+            <h5 id="locationh4"> Find a Brews and Stews Restaurant: </h5>
+            <div class="field-container">
+              <input type="text" class="field" value>
+            </div>
+
+            <div class="list">
+              <div class="store store-list store-current" data-id="59">
+                <div class="store-inner clearfix">
+                  <center>
+                    <div class="column column-1">
+                      <h3 class="store-name">Fleetwood</h3>
+                  </center>
+                  <center>
+                    <div class="store-address store-block">
+
+                      801-15980 Fraser Hwy
+                      <br> Surrey, BC, V3S 2W4
+
+                    </div>
+
+                  </center>
+
+                  </div>
+
+                  <div class="column column-2">
+
+                    <ul class="store-contact store-block">
+
+                      <li class="phone phone-info">
+                        Store Information:
+                        <span>
+								
+								(604) 111-9999
+								
+							</span>
+                      </li>
+
+
+                    </ul>
+
+
+                    <ul class="store-hours store-block">
+
+                      <li>Sun - Mon: 11:00 AM - 12:00 AM</li>
+
+                      <li>Tue - Sat: 11:00 AM - 2:00 AM</li>
+
+                    </ul>
+
+                  </div>
+
+
+
+
+
+                  <center>
+                    <div class="store-btn">
+
+
+
+
+                      <a class="icon-button view-menu" href="menu.html" data-guid="B1C3A52D-7256-4430-86A7-006305AE394C"><i></i>Menu</a>
+
+
+                      <a class="icon-button show-on-map" href="https://www.google.ca/maps/@49.1726171,-122.8109937,15z" data-id="59"><i></i>Map</a>
+
+
+                      <a class="icon-button directions" href="http://maps.google.com/maps?hl=en&amp;daddr=801-15980+Fraser+Hwy%2CSurrey%2CBC%2CV3S+2W4%2CCanada" target="_blank"><i></i>Directions</a>
+
+                    </div>
+                  </center>
+                  <br></br>
+
+                </div>
+              </div>
+
+              <div class="store store-list " data-id="61">
+                <div class="store-inner clearfix">
+                  <center>
+                    <div class="column column-1">
+                      <h3 class="store-name">Guildford</h3>
+                  </center>
+                  <center>
+                    <div class="store-address store-block">
+
+                      15125 100th Avenue
+                      <br> Surrey, BC, V3R 9P4
+
+                    </div>
+
+                  </center>
+                  </div>
+
+                  <div class="column column-2">
+
+                    <ul class="store-contact store-block">
+
+                      <li class="phone phone-info">
+                        Store Information:
+                        <span>
+								
+								(604) 222-8888
+								
+							</span>
+                      </li>
+
+
+                    </ul>
+
+
+                    <ul class="store-hours store-block">
+
+                      <li>Sun - Sat: 11:00 AM - 2:00 AM</li>
+
+                    </ul>
+
+                  </div>
+
+
+
+
+
+                  <center>
+                    <div class="store-btn">
+
+
+
+
+
+                      <a class="icon-button view-menu" href="menu.html" data-guid="EEDE415F-2AAF-45FF-90E2-EC272DEFFE5A"><i></i>Menu</a>
+
+
+                      <a class="icon-button show-on-map" href="https://www.google.ca/maps/@49.1726171,-122.8109937,15z" data-id="61"><i></i>Map</a>
+
+
+                      <a class="icon-button directions" href="http://maps.google.com/maps?hl=en&amp;daddr=15125+100th+Avenue%2CSurrey%2CBC%2CV3R+9P4%2CCanada" target="_blank"><i></i>Directions</a>
+
+                    </div>
+
+                  </center>
+
+                </div>
+              </div>
+
+              <div class="store store-list " data-id="73">
+                <div class="store-inner clearfix">
+                  <center>
+                    <div class="column column-1">
+                      <h3 class="store-name">Newton</h3>
+                  </center>
+                  <div class="store-address store-block">
+
+                    <center>
+
+                      600-7488 King George Hwy King's Cross Mall
+                      <br> Surrey, BC, V3W 0H9
+
+                  </div>
+
+                  </center>
+
+                  </div>
+
+                  <div class="column column-2">
+
+                    <ul class="store-contact store-block">
+
+                      <li class="phone phone-info">
+                        Store Information:
+                        <span>
+								
+								(604) 222-9998								
+							</span>
+                      </li>
+
+
+                    </ul>
+
+
+                    <ul class="store-hours store-block">
+
+                      <li>Sun - Sat: 11:00 AM - 2:00 AM</li>
+
+                    </ul>
+
+                  </div>
+
+
+
+
+                  <center>
+
+                    <div class="store-btn">
+
+
+                      <a class="icon-button view-menu" href="menu.html" data-guid="26C4DE5F-C7EC-48A1-A04A-4C6D27EC30F7"><i></i>Menu</a>
+
+
+                      <a class="icon-button show-on-map" href="https://www.google.ca/maps/@49.1726171,-122.8109937,15z" data-id="73"><i></i>Map</a>
+
+
+                      <a class="icon-button directions" href="http://maps.google.com/maps?hl=en&amp;daddr=600-7488+King+George+Hwy%0AKing%27s+Cross+Mall%2CSurrey%2CBC%2CV3W+0H9%2CCanada" target="_blank"><i></i>Directions</a>
+
+                    </div>
+
+                  </center>
+
+                </div>
+              </div>
+
+              <div class="store store-list " data-id="20">
+                <div class="store-inner clearfix">
+                  <center>
+                    <div class="column column-1">
+                      <h3 class="store-name">Cloverdale</h3>
+                  </center>
+                  <center>
+                    <div class="store-address store-block">
+
+                      600-6486 176th St
+                      <br> Surrey, BC, V3S 4G3
+
+                    </div>
+                  </center>
+
+
+
+                  </div>
+
+                  <div class="column column-2">
+
+                    <ul class="store-contact store-block">
+
+                      <li class="phone phone-info">
+                        Store Information:
+                        <span>
+								
+								(604) 222-9999
+								
+							</span>
+                      </li>
+
+
+                    </ul>
+
+
+                    <ul class="store-hours store-block">
+
+                      <li>Sun - Thu: 11:00 AM - 1:00 AM</li>
+
+                      <li>Fri - Sat: 11:00 AM - 2:00 AM</li>
+
+                    </ul>
+
+                  </div>
+
+
+
+
+                  <center>
+                    <div class="store-btn">
+
+
+                      <a class="icon-button view-menu" href="menu.html" data-guid="56EE21A8-9461-41B1-87CC-2E8ABF644D21"><i></i>Menu</a>
+
+
+                      <a class="icon-button show-on-map" href="https://www.google.ca/maps/@49.1726171,-122.8109937,15z" data-id="20"><i></i>Map</a>
+
+
+                      <a class="icon-button directions" href="http://maps.google.com/maps?hl=en&amp;daddr=600-6486+176th+St%2CSurrey%2CBC%2CV3S+4G3%2CCanada" target="_blank"><i></i>Directions</a>
+
+                    </div>
+
+                  </center>
+
+
+                </div>
+              </div>
+
+              <div class="store store-list " data-id="74">
+                <div class="store-inner clearfix">
+                  <center>
+                    <div class="column column-1">
+                      <h3 class="store-name">Central City</h3>
+                  </center>
+                  <center>
+                    <div class="store-address store-block">
+
+                      #1081 - 10153 King George Hwy
+                      <br> Surrey, BC, V3T 2W1
+
+                    </div>
+
+                  </center>
+
+                  </div>
+
+                  <div class="column column-2">
+
+                    <ul class="store-contact store-block">
+
+                      <li class="phone phone-info">
+                        Store Information:
+                        <span>
+								
+								(604) 322-9999
+								
+							</span>
+                      </li>
+
+
+                    </ul>
+
+
+                    <ul class="store-hours store-block">
+
+                      <li>Sun - Thu: 11:00 AM - 12:00 AM</li>
+
+                      <li>Fri - Sat: 11:00 AM - 2:00 AM</li>
+
+                    </ul>
+
+                  </div>
+
+
+
+
+                  <center>
+
+                    <div class="store-btn">
+
+
+
+                      <a class="icon-button view-menu" href="menu.html" data-guid="66D1D822-137B-43EC-AEBB-51CCDF1DCC87"><i></i>Menu</a>
+
+
+                      <a class="icon-button show-on-map" href="https://www.google.ca/maps/@49.1726171,-122.8109937,15z" data-id="74"><i></i>Map</a>
+
+
+                      <a class="icon-button directions" href="http://maps.google.com/maps?hl=en&amp;daddr=%231081+-+10153+King+George+Hwy%2CSurrey%2CBC%2CV3T+2W1%2CCanada" target="_blank"><i></i>Directions</a>
+
+                    </div>
+
+                  </center>
+
+                </div>
+              </div>
+
+
+
+              <div class="store store-list " data-id="63">
+                <div class="store-inner clearfix">
+                  <center>
+                    <div class="column column-1">
+                      <h3 class="store-name">Langley</h3>
+                  </center>
+                  <center>
+                    <div class="store-address store-block">
+
+                      19700 Langley ByPass
+                      <br> Langley, BC, V3A 7B1
+
+                    </div>
+
+                  </center>
+
+
+
+                  </div>
+
+                  <div class="column column-2">
+
+                    <ul class="store-contact store-block">
+
+                      <li class="phone phone-info">
+                        Store Information:
+                        <span>
+								
+								(604) 333-9888
+								
+							</span>
+                      </li>
+
+
+                    </ul>
+
+
+                    <ul class="store-hours store-block">
+
+                      <li>Sun - Thu: 11:00 AM - 1:00 AM</li>
+
+                      <li>Fri - Sat: 11:00 AM - 2:00 AM</li>
+
+                    </ul>
+
+                  </div>
+
+
+
+
+                  <center>
+
+                    <div class="store-btn">
+
+
+
+                      <a class="icon-button view-menu" href="menu.html" data-guid="A14709B2-2D11-4460-96B3-7634D68BC2E1"><i></i>Menu</a>
+
+
+                      <a class="icon-button show-on-map" href="https://www.google.ca/maps/@49.1726171,-122.8109937,15z" data-id="63"><i></i>Map</a>
+
+
+                      <a class="icon-button directions" href="http://maps.google.com/maps?hl=en&amp;daddr=19700+Langley+ByPass%2CLangley%2CBC%2CV3A+7B1%2CCanada" target="_blank"><i></i>Directions</a>
+
+                    </div>
+
+                  </center>
+
+                  <br></br>
+
+                </div>
+              </div>
+        </form>
+        </div>
+  </body>
+
+</html>

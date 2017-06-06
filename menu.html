@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Menu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="file://///SD36/ENVR/StudentHome/arsh.jassal/Desktop/index/stylesheet.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="stylesheet.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Oleo+Script' rel='stylesheet' type='text/css'>
+
+  </head>
+
+  <body class="location1">
+
+    <div>
+      <div class="sidebar">
+
+        <div class="w3-sidebar w3-bar-block w3-card-2 w3-animate-left" style="display:none" id="mySidebar">
+
+          <button class="w3-bar-item w3-button w3-large" onclick="w3_close()">Close &times;</button>
+
+          <a href="home.html" class="w3-bar-item w3-button w3-border-bottom"><i class="fa fa-home fa-2x"></i>
+                        <span class="nav-text">
+                            Home
+                        </span>
+                    </a>
+
+          <a href="menu.html" class="w3-bar-item w3-button w3-border-bottom"><i class="fa fa-bars fa-2x"></i>
+                        <span class="nav-text">
+                            Menu
+                        </span>
+                    </a>
+
+          <a href="location.html" class="w3-bar-item w3-button w3-border-bottom"><i class="fa fa-map-marker fa-2x"></i>                        
+                        <span class="nav-text">               Location                        </span>                    
+                    </a>
+
+          <a href="#" class="w3-bar-item w3-button w3-border-bottom"><i class="fa fa-phone fa-2x"></i>
+                        <span class="nav-text">
+                           Contact Us
+                        </span>
+                    </a>
+
+          <a href="#" class="w3-bar-item w3-button w3-border-bottom"><i class="fa fa-user-circle fa-2x"></i>
+                        <span class="nav-text">
+                          Log In
+                        </span>
+                    </a>
+        </div>
+      </div>
+
+
+      <div zclass="w3-main" id="main">
+
+        <div class="w3-teal">
+          <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
+          <div class="w3-container">
+          </div>
+        </div>
+
+      </div>
+
+      <script>
+        function w3_open() {
+          document.getElementById("main").style.marginLeft = "25%";
+          document.getElementById("mySidebar").style.width = "25%";
+          document.getElementById("mySidebar").style.display = "block";
+          document.getElementById("openNav").style.display = 'none';
+        }
+        function w3_close() {
+          document.getElementById("main").style.marginLeft = "0%";
+          document.getElementById("mySidebar").style.display = "none";
+          document.getElementById("openNav").style.display = "inline-block";
+        }
+      </script>
+
+    </div>
+    <h1 class="pagetitle"><em> Menu </em></h1>
+    <center>
+      <img src="https://images7.alphacoders.com/803/803247.jpg" width="1500" height="900" alt="" align="center" />
+
+      <div class="menuitems">
+        <blockquote>
+          <h1 id="breakfast"><strong> Breakfast </strong></h1>
+        </blockquote>
+        <div class="items">
+          <img src="http://www.foodpost.ca/wp-content/uploads/2014/12/Blueberry-Pancakes.jpg" height="170px" width="200px" style="border:5px solid teal">
+          <h3 id="foodyo3"><strong> Blueberry Pancakes with Syrup</strong></h3>
+          <p id="foodscript3"><em>For those with a sweet tooth!</em></p>
+          <h4 id="pricebling">$6.50</h4>
+          <a href="#" class="btn">Order</a>
+        </div>
+
+        <br></br>
+
+        <div class="items">
+          <img src="http://s3.amazonaws.com/studio-me/system/photos/photos/000/782/471/large/iStock_000036614706_Small.jpg?1415204434" height="170px" width="200px" style="border:5px solid teal">
+          <h3 id="foodyo4"><strong> Ham &amp; Cheese Omelette</strong></h3>
+          <p id="foodscript4"><em> Fuel your day with an energy-packed breakfast!</em></p>
+          <h4 id="pricebling">$7.89</h4>
+          <a href="#" class="btn">Order</a>
+        </div>
+
+        <br></br>
+
+        <div class="items">
+          <img src="https://previews.123rf.com/images/stockfood/stockfood1409/stockfood140995965/32799544-Toasted-English-Muffin-with-Butter-and-Raspberry-Jam-Orange-Juice-Stock-Photo.jpg" height="170px" width="230px" style="border:5px solid teal">
+          <h3 id="foodyo5"><strong> English Muffin with Jam</strong></h3>
+          <p id="foodscript5"><em> Once upon a time, they were called just "muffins".</em></p>
+          <h4 id="pricebling">$5.99</h4>
+          <a href="#" class="btn">Order</a>
+        </div>
+
+        <br></br>
+        <blockquote>
+          <h1 id="lunch"><strong> Lunch </strong></h1>
+        </blockquote>
+        <div class="items">
+          <img src="http://www.seriouseats.com/images/2014/10/20141007-in-n-out-burger-avocado-bacon-6.jpg" height="160px" width="200px" style="border:5px solid teal">
+          <h3 id="eat"><strong> Double-Double</strong></h3>
+          <p id="foodscript6"><em>Double the meat. Double the fun.</em></p>
+          <h4 id="pricebling">$8.50</h4>
+          <a href="#" class="btn">Order</a>
+        </div>
+
+        <br></br>
+
+        <div class="items">
+          <img id="foodpicsyo" src="https://s3.amazonaws.com/classconnection/434/flashcards/772434/jpg/crispy-chicken-sandwich-150226B0E73619770F5.jpg" height="160px" width="220px" style="border:5px solid teal">
+          <h3 id="foodyo6"><strong> Krispy Buffalo Chicken Sandwich</strong></h3>
+          <p id="foodscript7"><em>Crispy. Tangy. Hot.</em></p>
+          <h4 id="pricebling">$10.50</h4>
+          <a href="#" class="btn">Order</a>
+        </div>
+
+        <br></br>
+
+        <div class="items">
+          <img id="foodpicsyo" src="https://pbs.twimg.com/media/CVFczMbUwAArIkR.png:large" height="165px" width="185px" style="border:5px solid teal">
+          <h3 id="foodyo7"><strong> BC Chicken Burger</strong></h3>
+          <p id="foodscript8"><em>TOP SELLER!</em></p>
+          <h4 id="pricebling">$10.99</h4>
+          <a href="#" class="btn">Order</a>
+        </div>
+
+        <br></br>
+
+        <div class="items">
+          <img id="foodpicsyo" src="http://media.bahamabreeze.com/en_us/images/product/BB-GrilledChickenCobbSalad.jpg" height="140px" width="220px" style="border:5px solid teal">
+          <h3 id="foodyo8"><strong> Chicken Cobb Salad </strong></h3>
+          <p id="foodscript2"><em> Get more, for less!</em></p>
+          <h4 id="pricebling2">$12.99</h4>
+          <a href="#" class="btn">Order</a>
+        </div>
+
+        <br></br>
+        <blockquote>
+          <h1 id="dinner"><strong> Dinner </strong></h1>
+        </blockquote>
+        <div class="items">
+          <img id="foodpicsyo" src="https://7b30cfc4a1b0ada1cdb2-893624c4eafa7bb58a8641a0ccf4ceea.ssl.cf1.rackcdn.com/smoky-gouda-chicken-broccoli-skillet_thumb-l.jpg?mod=636196583457770000" height="135px" width="210px" style="border:5px solid teal">
+          <h3 id="foodyo9"><strong> Smoky Gouda Chicken &amp; Broccoli Skillet </strong></h3>
+          <p id="foodscript9"><em> This Italian delight will leave you speachless!</em></p>
+          <h4 id="pricebling">$16.99</h4>
+          <a href="#" class="btn">Order</a>
+        </div>
+
+        <br></br>
+
+        <div class="items">
+          <img id="foodpicsyo" src="https://7b30cfc4a1b0ada1cdb2-893624c4eafa7bb58a8641a0ccf4ceea.ssl.cf1.rackcdn.com/wild-alaska-salmon-skillet_thumb-m.jpg?mod=636172552824070000" height="135px" width="210px" style="border:5px solid teal">
+          <h3 id="foodyo10"><strong> Wild Salmon Skillet </strong></h3>
+          <p id="foodscript10"><em> BC's finest!</em></p>
+          <h4 id="pricebling">$17.49</h4>
+          <a href="#" class="btn">Order</a>
+        </div>
+
+        <br></br>
+
+        <div class="items">
+          <img id="foodpicsyo" src="http://everydaygoodthinking.com/wp-content/uploads/2013/10/pot-roast-4.jpg" height="230px" width="177px" style="border:5px solid teal">
+          <h3 id="foodyo11"><strong> Slow-Cooked Pot Roast </strong></h3>
+          <p id="foodscript11"><em> Meal cooked for a king...or queen!</em></p>
+          <h4 id="pricebling">$15.89</h4>
+          <a href="#" class="btn">Order</a>
+        </div>
+        <blockquote>
+          <h1 id="drinksanddessert"> Drinks and Desserts </h1>
+        </blockquote>
+        <div class="items">
+          <img id="foodpicsyo" src="https://redtricom.files.wordpress.com/2015/06/ice-cream-bar-mason-jars2.jpg?w=640&h=458" height="190px" width="240px" style="border:5px solid teal">
+          <h3 id="foodyo12"><strong> Build Your Own Sundae </strong></h3>
+          <p id="foodscript12"><em> A child's 4 favourite words! </em></p>
+          <h4 id="pricebling">$4.99 - $6.75</h4>
+          <a href="#" class="btn">Build & Order</a>
+        </div>
+
+        <br></br>
+
+        <div class="items">
+          <img id="foodpicsyo" src="http://i.dailymail.co.uk/i/pix/2010/03/12/article-1257392-08AC7371000005DC-403_634x319.jpg" height="130px" width="200px" style="border:5px solid teal">
+          <h3 id="foodyo13"><strong> New York Cheesecake </strong></h3>
+          <p id="foodscript13"><em> Traditional delight!</em></p>
+          <h4 id="pricebling">$3.89</h4>
+          <a href="#" class="btn">Order</a>
+        </div>
+
+        <br></br>
+
+        <div class="items">
+          <img id="foodpicsyo" src="http://www.thesassycook.com/wp-content/uploads/2015/03/best-brownies-recipe-ever.jpg" height="150px" width="197px" style="border:5px solid teal">
+          <h3 id="foodyo14"><strong> Chocolate Brownie </strong></h3>
+          <p id="foodscript14"><em> Small and addictive!</em></p>
+          <h4 id="pricebling">$2.99</h4>
+          <a href="#" class="btn">Order</a>
+        </div>
+
+        <br></br>
+
+        <div class="items">
+          <img id="foodpicsyo" src="http://cdn.playbuzz.com/cdn/a94dae8f-5b9e-4220-94ee-69e569da155d/0d45a6c3-1975-4aa9-8265-0b72ffcf4875.jpg" height="140px" width="187px" style="border:5px solid teal">
+          <h3 id="foodyo15"><strong> 12 oz Can of Soda </strong></h3>
+          <table id="foodscript">
+            <tr>
+              <td> 7Up </td>
+            </tr>
+            <tr>
+              <td> Root Beer </td>
+            </tr>
+            <tr>
+              <td> Brisk Lemonade (Pink and Lemon) </td>
+            </tr>
+            <tr>
+              <td> Coke </td>
+            </tr>
+            <tr>
+              <td> Diet Coke </td>
+            </tr>
+            <tr>
+              <td> Fanta </td>
+            </tr>
+
+          </table>
+          <h4 id="pricebling">$1.89</h4>
+          <a href="#" class="btn">Order</a>
+        </div>
+
+        <br></br>
+
+        <div class="items">
+          <img id="foodpicsyoyo" src="http://www.baronialimentari.com/wp-content/uploads/2014/05/enoteca.jpg" height="160px" width="220px" style="border:5px solid teal">
+          <h3 id="foodyo16"><strong> Wine </strong></h3>
+          <p id="foodscriptyo"><em> Explore our amazing collection! Aged? White? We have it all! </em></p>
+          <h4 id="pricebling"> Prices vary </h4>
+          <a href="#" class="btn">Order</a>
+        </div>
+
+        <br></br>
+
+        <div class="items">
+          <img id="foodpicsyo" src="http://img.medscape.com/thumbnail_library/dt_160310_coffee_cup_800x600.jpg" height="140px" width="200px" style="border:5px solid teal">
+          <h3 id="foodyo"><strong> Coffee </strong></h3>
+          <p id="foodscript15"><em> Plain and Simple.</em></p>
+          <h4 id="pricebling">$3.99</h4>
+          <a href="#" class="btn">Order</a>
+        </div>
+
+        <br></br>
+
+        <div class="items">
+          <img id="foodpicsyo" src="http://dingo.care2.com/pictures/greenliving/1347/1346374.large.jpg" height="135px" width="203px" style="border:5px solid teal">
+          <h3 id="foodyo2"><strong> Hot Chocolate </strong></h3>
+          <p id="foodscript16"><em> Not just for the holidays!</em></p>
+          <h4 id="pricebling">$3.14</h4>
+          <a href="#" class="btn">Order</a>
+        </div>
+
+        <br></br>
+
+      </div>
+    </center>
+
+
+
+
+
+
+  </body>
+
+</html>
